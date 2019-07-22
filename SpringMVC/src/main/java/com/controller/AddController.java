@@ -13,20 +13,19 @@ import com.service.AddService;
 @Controller
 public class AddController {
 		@RequestMapping("/addition")
-	public ModelAndView add(/* @RequestParam int i, @RequestParam int j, */
-				HttpServletRequest request,HttpServletResponse response)
+		public ModelAndView add(@RequestParam("t1") int i, @RequestParam ("t2") int j, HttpServletRequest request,HttpServletResponse response)
 		{
 			
-			System.out.println("im here");
-			int i=Integer.parseInt(request.getParameter("t1"));
-			int j=Integer.parseInt(request.getParameter("t2"));
-			int k=i+j;
+			//vSystem.out.println("im here");
+			//int i=Integer.parseInt(request.getParameter("t1"));
+			//int j=Integer.parseInt(request.getParameter("t2"));
+			//int k=i+j;
 			
-			//AddService as=new AddService();
-		//	int k=as.calculate(i, j);
+			AddService as=new AddService();
+			int k=as.calculate(i, j);
 			
 			ModelAndView mv=new ModelAndView();
-			mv.setViewName("addpage.jsp");
+			mv.setViewName("addpage");
 			mv.addObject("result",k);
 			
 			return mv;

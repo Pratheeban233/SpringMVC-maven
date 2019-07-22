@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<form action="addition"></form>
+<form action="addition">
 	<input type="text" name="t1"><br>
 	<input type="text" name="t2"><br>
 	<input type="submit">

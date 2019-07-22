@@ -14,25 +14,26 @@ import com.service.LoginService;
 public class LoginController {
 	@RequestMapping("/login")
 	public ModelAndView login(HttpServletRequest req,HttpServletResponse res)
+
+	//public ModelAndView login(@RequestParam("t1") String uname,@RequestParam("t2") String pass,HttpServletRequest req,HttpServletResponse res)
 	{	
-		System.out.println("login page");
+		//System.out.println("login page 1");
 		String uname=req.getParameter("uname");
 		String pass=req.getParameter("pass");
 			ModelAndView mv=new ModelAndView();
-		//LoginService ls=new LoginService();
-		//if(ls.check(uname,pass))
+		/*LoginService ls=new LoginService();
+		if(ls.check(uname,pass))*/
 			
-			if(uname.equals("Prathi")&&pass.equals("12345"))
-				
+		if(uname.equals("Prathi")&&pass.equals("12345"))
 		{
-				System.out.println("login page");
-			mv.setViewName("loginsuccess.jsp");
+			mv.setViewName("loginsuccess");
 		}
 		else
 		{
-			mv.setViewName("loginfail.jsp");
+			mv.setViewName("loginfail");
 		}
-		
+		//System.out.println("login page 2");
+
 		return mv;
 		
 	}

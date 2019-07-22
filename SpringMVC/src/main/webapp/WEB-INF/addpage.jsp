@@ -7,7 +7,7 @@
 <title>AddPage</title>
 </head>
 <body>
-	Result is: <%=request.getAttribute("result") %>
+	Result is: <%=request.getAttribute("result")%>
 	<%-- Result is: ${result} --%>
 </body>
 </body>
