@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Error Page</title>
 </head>
-<body>
+<body bgcolor="red">
 	Sorry..try once again!!!
 </body>
 </html>

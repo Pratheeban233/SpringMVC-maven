@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>SuccessPage</title>
 </head>
-<body>
+<body bgcolor="Green">
 		Welcome..have a good day!!!
 </body>
 </html>

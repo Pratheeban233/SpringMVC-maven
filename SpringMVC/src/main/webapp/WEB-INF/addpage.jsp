@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>AddPage</title>
 </head>
-<body>
+<body bgcolor="yellow">
 	Result is: <%=request.getAttribute("result")%>
 	<%-- Result is: ${result} --%>
 </body>
